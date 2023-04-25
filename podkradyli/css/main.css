@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sedgwick+Ave+Display&display=swap');
+
+
+
+html, body{
+    height:100%;
+    margin:0;
+}
+.menu{
+    background: rgb(70, 172, 255);
+    margin:0;
+    height:50px;
+}
+
+.everyday{
+    position: relative;
+    display: inline-block;
+}
+.everyday-title{    
+    margin-left: 10px;
+    width:150px;
+}
+
+.everyday-title a{
+    height:50px;
+    width:200px;
+    
+    padding:0;
+    line-height: 50px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+ul{ 
+    list-style-type: none;
+}
+
+.everyday-dropdown-menu{
+    display: none;
+    position: absolute; 
+    background-color: #a187ff;
+    min-width: 150px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);  
+    list-style-type: none;
+    margin-left: 10px ;
+   
+}
+.everyday-dropdown-menu a{
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    font-weight: 300;
+    font-family: 'Anton', sans-serif;
+    margin-left: -40px;
+   
+}
+
+.everyday-dropdown-menu a:hover{
+    background-color: #8569ec;
+}
+
+.everyday:hover .everyday-dropdown-menu{
+    display: block;
+}
+
+.everyday:hover .everyday-title{
+    background-color: #765ada;
+}
